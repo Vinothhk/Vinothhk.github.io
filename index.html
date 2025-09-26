@@ -1,853 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Vinoth Kumar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinoth Kumar - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+    }
+    .container { max-width: 1000px; }
+    .gradient-text {
+      background: linear-gradient(135deg, #a0a0ff, #ff80ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
 </head>
+<body class="antialiased">
+  <div class="container mx-auto px-4 py-8 md:py-16">
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-
-      <h1><a href="index.html">Vinoth Kumar</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <!-- <h2>I'm a passionate <span>graphic designer</span> from New York</h2> -->
-      <h2>I love to make robots and softwares</h2>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-          <!-- <li><a class="nav-link" href="#services">Services</a></li> -->
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <!-- <a href="#" class="twitter" target="_blank"><i class="bi bi-twitter"></i></a> -->
-        <a href="https://github.com/Vinothhk" class="github" target="_blank"><i class="bi bi-github"></i></a>
-        <!-- <a href="#" class="instagram"><i class="bi bi-instagram" target="_blank"></i></a> -->
-        <a href="https://www.linkedin.com/in/vinoth-kumar-648025252/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+    <!-- Header with profile photo -->
+    <!-- Header with larger profile photo -->
+    <header class="relative text-center mb-16">
+      <div class="absolute right-0 top-0 mt-4 mr-4 md:mt-6 md:mr-10">
+        <!-- Replace 'profile.jpg' with your actual photo path -->
+        <img src="profile.jpeg" alt="Vinoth Kumar photo" class="w-40 h-40 rounded-full shadow-md border-2 border-gray-600 object-cover object-[center_top]">
       </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text">Vinoth Kumar</h1>
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+        Robotics & Automation Engineer | ROS2 • Reinforcement Learning • Embedded Systems
+      </p>
+      <p class="text-sm text-gray-500 mt-2">
+        <a href="mailto:iamvinothkumar16@gmail.com">iamvinothkumar16@gmail.com</a> · 
+        <a href="https://linkedin.com/in/vinoth-kumar-648025252">LinkedIn</a> · 
+        <a href="https://github.com/Vinothhk">GitHub</a>
+      </p>
+    </header>
 
-    </div>
-  </header><!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
+    <!-- About -->
+    <section id="about" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-4 text-white">About Me</h2>
+      <p class="text-gray-300">
+        I am a final-year B.Tech student specializing in Automation and Robotics at Amrita Vishwa Vidhyapeetham, Chennai. My academic journey, backed by a CGPA of 8.0, has provided me with a solid foundation in robot kinematics, motion planning, control systems, and machine learning. I thrive on developing innovative solutions and robust algorithms for autonomous robotics, experienced in both simulation and hardware environments. My work spans reinforcement learning, adaptive robotic locomotion, embedded platforms, and behavior tree architectures. I aim to contribute to advanced robotics research and industry, leveraging hands-on expertise and a collaborative mindset.
+      </p>
+    </section>
 
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>About me</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/me2.png" class="img-fluid" alt="">
+    <!-- Projects -->
+    <section id="projects" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-8 text-white text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-2 gradient-text">RL-Based Gait for Quadruped</h3>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Custom MuJoCo simulation and ROS2 integration for SpotMicro quadruped.</li>
+            <li>Designed RL environment for dynamic gait learning and stability improvement.</li>
+            <li>Applied reward shaping and parameter tuning to optimize agent performance.</li>
+            <li>Validated trained policies in both virtual and real robot setups.</li>
+          </ul>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>Robotics Engineer / Robotics Software Developer</h3>
-          <p class="fst-italic">
-            My journey in robotics is fueled by a deep curiosity and a desire to solve complex problems through creative engineering solutions.
-          </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>13 April 2005</span></li>
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 94355 86350</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chennai, India</span></li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>19</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelors in Automation & Robotics(pursuing)</span></li>
-                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>iamvinothkumar16@gmail.com</span></li>
-                <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-              </ul>
-            </div>
-          </div>
-          <p>
-            I possess a solid foundation in key programming languages such as Python, C++, MATLAB and Rust,along with hands-on experience in ROS/ROS 2. I am committed to continuous learning and professional growth, constantly updating my skillset with the latest advancements in robotics and AI. My adaptability and openness to new ideas enable me to thrive in dynamic environments and take on diverse challenges with confidence.
-          </p>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-2 gradient-text">Arboric Robot</h3>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Developed mapless indoor navigation robot using BehaviorTree.CPP.</li>
+            <li>Integrated ArUco marker-based waypoint detection for navigation.</li>
+            <li>Implemented monocular depth estimation for real-time obstacle avoidance.</li>
+            <li>Used synchronized multithreaded execution for fast sensor fusion.</li>
+            <li>Won BEST PAPER AWARD at AMMA 2025 for this work.</li>
+          </ul>
         </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <!-- <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div> -->
-    <!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">ROS/ROS 2<i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Python<i class="val">95%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">MATLAB<i class="val">85%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">C++<i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Motion Planning<i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Reinforcement Learning<i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="bi bi-robot" style="color: #ffbb2c;"></i>
-            <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-            <h3>Mobile Robots</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
-            <h3>Manipulators</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-            <h3>Industrial Robots</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
-            <h3>Trajectory planning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #47aeff;"></i>
-            <h3>Motion planning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>Robot Kinematics</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>Robot Dynamics</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-            <h3>Robot Operating System</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-anchor-line" style="color: #b2904f;"></i>
-            <h3>Programming</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-disc-line" style="color: #b20969;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-base-station-line" style="color: #ff5828;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-            <h3>Legged Robots</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-
-    <!-- ======= Testimonials ======= -->
-    <!-- <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-          <!-- <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div> -->
-          <!-- End testimonial item -->
-
-        <!-- </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div>  -->
-    <!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-
-  <!-- ======= Resume Section ======= -->
-  <section id="resume" class="resume">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Experience &amp; Education</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- <h3 class="resume-title">Sumary</h3>
-          <div class="resume-item pb-0">
-            <h4>Alice Barkley</h4>
-            <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-            <p>
-            <ul>
-              <li>Portland par 127,Orlando, FL</li>
-              <li>(123) 456-7891</li>
-              <li>alice.barkley@example.com</li>
-            </ul>
-            </p>
-          </div> -->
-
-          <h3 class="resume-title">Education</h3>
-          <!-- <div class="resume-item">
-            <h4>Master of Fine Arts &amp; Graphic Design</h4>
-            <h5>2015 - 2016</h5>
-            <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-            <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-          </div> -->
-          <div class="resume-item">
-            <h4>Bachelor of Automation &amp; Robotics</h4>
-            <h5>2022 - 2026</h5>
-            <p><em>Amrita Vishwa Vidhyapeetham, Chennai</em></p>
-            <p>Developed a strong foundation in robotics, automation, and related technologies through coursework and practical lab sessions. Actively participated in competitions and challenges, gaining exposure to real-world applications of your studies.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <h3 class="resume-title">Experience</h3>
-
-          <div class="resume-item">
-            <h4>Robotics Engineer Intern - B-Robotize</h4>
-            <h5>2024 Aug - 2024 Oct</h5>
-            <p><em>Bangalore, India</em></p>
-            <p>
-            <ul>
-              <li>Created and optimized ROS2 scripts for interfacing sensors with both ROS2 and Micro-ROS.</li>
-              <li>Developed detailed documentation and learning resources for various ROS2 and Micro-ROS applications.</li>
-              <li>Worked on sensor integration, focusing on efficient communication between sensors and robotic platforms..</li>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>ROS Developer Intern - TENSRAI Technologies Pvt Ltd</h4>
-            <h5>2024 Nov - 2025 Feb</h5>
-            <p><em>Hyderabad, India</em></p>
-            <p>
-            <ul>
-              <li>Worked on optimizing the Navigation Stack of AMR for efficient navigation and obstacle avoidance in tighter environment with dynamic obstacles</li>
-              <li>Generated Synthetic Datas from Nvidia Isaac Sim</li>
-              <li>Developed custom algorithms for Docking, Traffic Coordination in Multi-Robot Environment</li>
-            </p>
-          </div>
-
-          <!-- <div class="resume-item">
-            <h4>Graphic design specialist</h4>
-            <h5>2017 - 2018</h5>
-            <p><em>Stepping Stone Advertising, New York, NY</em></p>
-            <p>
-            <ul>
-              <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-              <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-              <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-              <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-            </ul>
-            </p>
-          </div> -->
-        </div>  
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <h3 class="resume-title">Volunteering</h3>
-          <div class="resume-item">
-            <h4>Lead Coordinator - Robotics Club</h4>
-            <h5>2023 - Present</h5>
-            <p><em>Chennai, India</em></p>
-            <p>
-            <ul>
-              <li>Organized and coordinated various competitions from the club’s side, ensuring smooth execution and participant engagement.</li>
-              <li>Conducted workshops as a mentor, providing hands-on guidance and sharing knowledge with participants. </li>
-              <li>Mentored fellow club members and workshop attendees, fostering a collaborative and learning-focused environment.</li>
-            </p>
-          </div>
-
-          <div class="resume-item">
-            <h4>Vice Chair - IEEE Robotics and Automation Society Student Branch, AVV</h4>
-            <h5>2024 - Present</h5>
-            <p><em>Chennai, India</em></p>
-            <p>
-            <ul>
-              <!-- <li>Organized and coordinated various competitions from the club’s side, ensuring smooth execution and participant engagement.</li>
-              <li>Conducted workshops as a mentor, providing hands-on guidance and sharing knowledge with participants. </li>
-              <li>Mentored fellow club members and workshop attendees, fostering a collaborative and learning-focused environment.</li> -->
-            </p>
-          </div>
-          
-
-    </div>
-  </section><!-- End Resume Section -->
-
-  <!-- ======= Services Section ======= -->
-  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">ROS</li>
-            <li data-filter=".filter-card">Python</li>
-            <li data-filter=".filter-web">Others</li>
+        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-2 gradient-text">Neural Network Trajectory Generation</h3>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Designed neural network in MATLAB/Python for ABB IRB’s 6-DOF joint prediction.</li>
+            <li>Generated smooth, accurate robot trajectories using spline interpolation.</li>
+            <li>Benchmarked neural solutions against traditional inverse kinematics methods.</li>
+            <li>Showed improvements in speed and reliability for robot motion planning.</li>
           </ul>
         </div>
       </div>
+    </section>
 
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/proj1/img-2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Waypoint follower Robot</h4>
-              <p>ROS</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Vinothhk/2W_Diff_Bot.git" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+    <!-- Experience -->
+    <section id="experience" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Experience</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="font-bold">ROS Developer Intern — TENSRAI Technologies</h3>
+          <p class="text-sm text-gray-400">Nov 2024 – Feb 2025 | Remote</p>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Developed, tested, and optimized algorithms for Autonomous Mobile Robots (AMR) in Gazebo simulations.</li>
+            <li>Generated synthetic datasets using Nvidia Isaac Sim to enhance detection model training (YOLO).</li>
+            <li>Focused on reliability and robust validation for real-world robotic deployments.</li>
+          </ul>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/proj2/butlerbot.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Butler Bot in Cafe Environment</h4>
-              <p>Others</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Vinothhk/Cafe.git" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/proj3/multibots.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Multi Robot Simulation(Leader Follower Algorithm)</h4>
-              <p>ROS</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Vinothhk/spotmicro_ros2.git" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- neural network -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/manipulator.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Neural network based Inverse Kinematics for Trajectory planning in 6DOF manipulator</h4>
-              <p>Others</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Vinothhk/Neural-Network-Based-Inverse-Kinematics-in-Manipulator-Trajectory-Planning.git" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-        </div>
-
-        <!-- quadruped simulation -->
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/quadruped.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Quadruped Simulation with custom ROS 2 Controllers</h4>
-              <p>ROS</p>
-              <div class="portfolio-links">
-                <a href="https://github.com/Vinothhk/spotmicro_ros2.git" target="_blank" title="GitHub Repository"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Python 2</h4>
-              <p>Python</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Others 2</h4>
-              <p>Others</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>ROS 3</h4>
-              <p>ROS</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Python 1</h4>
-              <p>Python</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Python 3</h4>
-              <p>Python</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Others 3</h4>
-              <p>Others</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Chennai,India 601103</p>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-              <a href="https://github.com/Vinothhk" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/vinoth-kumar-648025252/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>iamvinothkumar16@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
-            <p>+91 94355 86350</p>
-          </div>
+        <div>
+          <h3 class="font-bold">Robotics Engineer Intern — B-Robotize</h3>
+          <p class="text-sm text-gray-400">Aug 2024 – Oct 2024 | Remote</p>
+          <ul class="list-disc list-inside text-gray-400">
+            <li>Created documentation and educational resources for ROS2 and Micro-ROS platforms.</li>
+            <li>Integrated sensors and built efficient communication between robotic platforms.</li>
+            <li>Led practical robotics implementations bridging simulation and embedded hardware.</li>
+          </ul>
         </div>
       </div>
+    </section>
 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
+    <!-- Education -->
+    <section id="education" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Education</h2>
+      <p class="text-gray-300"><b>B.Tech in Automation & Robotics</b>, Amrita Vishwa Vidhyapeetham, Chennai (2022–2026)<br>
+      CGPA: 8.0<br>
+      Relevant Coursework: Robot Kinematics, Sensors & Signal Processing, Control Systems, Probability & Statistics, Robot Dynamics, Mobile Robotics, Python Programming</p>
+    </section>
 
-    </div>
-  </section><!-- End Contact Section -->
+    <!-- Skills -->
+    <section id="skills" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Skills</h2>
+      <p class="text-gray-300">Programming: Python, C++, MATLAB, C<br>
+      Robotics Platforms: ROS2/ROS, MoveIt2, Micro-ROS, BehaviorTree.CPP<br>
+      ML/AI Frameworks: PyTorch, TensorFlow, CUDA, OpenCV, OpenAI-Gym<br>
+      Tools: Git, Docker, Arduino, Raspberry Pi, ESP32, Isaac Sim, Gazebo, PyQT<br>
+      Other: Embedded Systems, PointCloud Processing, Robotic Vision, Synthetic Data Generation, Sensor Fusion</p>
+    </section>
 
-  <div class="credits">
-    <!-- All the links in the footer should remain intact. -->
-    <!-- You can delete the links only if you purchased the pro version. -->
-    <!-- Licensing information: https://bootstrapmade.com/license/ -->
-    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    <!-- Certifications -->
+    <section id="certifications" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Certifications</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li>Applied Kalman Filtering Specialization - Coursera, 2024</li>
+        <li>Robotic Process Automation (RPA) Specialization — UiPath, 2024</li>
+        <li>Version Control with Git — Coursera, 2023</li>
+      </ul>
+    </section>
+
+    <!-- Volunteering -->
+    <section id="volunteering" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Volunteering</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li>Vice Chair — IEEE RAS Student Branch (2024–Present): Coordinated events, mentored peers, and fostered robotics research culture.</li>
+        <li>Lead Coordinator — Chennai Robotics Club (2023–Present): Organized national competitions, delivered workshops, and supported club members in project development.</li>
+      </ul>
+    </section>
+
+    <!-- Competitions -->
+    <section id="competitions" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Competitions</h2>
+      <ul class="list-disc list-inside text-gray-400">
+        <li>2nd Runner-Up + Best Design Award — Robocon 2024: Mobile manipulator robot for coconut harvesting.</li>
+        <li>Participant — Robocup ARM Challenge 2024: Pick-and-place challenge using MATLAB-ROS and YOLO.</li>
+        <li>Top 20 — e-Yantra Robotics Competition (Logistic Cobot theme): Advanced handling strategies.</li>
+        <li>Winner — INGENIUM 4.O Hackathon (Tantrotsav 2025): Autonomous coordinated robots for logistics.</li>
+      </ul>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="mb-20">
+      <h2 class="text-3xl font-semibold mb-6 text-white">Awards</h2>
+      <p class="text-gray-300">BEST PAPER AWARD — Arboric Robot, International Conference on Advancements in Materials, Manufacturing & Automation (AMMA 2025). Recognized for innovative contributions to mapless robotics navigation, behavior tree modularity, and efficient sensor integration.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-500 text-sm">
+      <p>&copy; 2025 Vinoth Kumar. All Rights Reserved.</p>
+    </footer>
   </div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
